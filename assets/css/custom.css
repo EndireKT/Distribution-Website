@@ -1,3 +1,7 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .custom-justify {
   text-align: justify;
 }
@@ -73,6 +77,10 @@
   color: white;
 }
 
+.scroll-btn {
+  display: none;
+}
+
 @media (min-width: 1200px) {
   .scroll-left {
     left: -50px;
@@ -89,9 +97,5 @@
   .scroll-btn {
     display: block;
   }
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
 }
 
