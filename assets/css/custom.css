@@ -1,8 +1,8 @@
 body {
   font-family: 'Poppins', sans-serif;
-  font-family: var(--font-body-family);
-  font-style: var(--font-body-style);
-  font-weight: var(--font-body-weight)initial;
+  font-family: var(--font-body-family) !important;
+  font-style: var(--font-body-style) !important;
+  font-weight: var(--font-body-weight) !important;
   font-size: 1.5rem;
   letter-spacing: 0.06rem;
   line-height: 1.8;
