@@ -1,0 +1,92 @@
+.custom-justify {
+  text-align: justify;
+}
+
+#scroll-container {
+  gap: 1rem;
+  padding: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  cursor: grab;
+  scroll-snap-type: x mandatory;
+}
+
+#scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-card {
+  flex: 0 0 auto;
+  width: 13em;
+  scroll-snap-align: center;
+  border-radius: 0.3em;
+  margin-top: 0px;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent !important;
+  border: 0px solid #ddd;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  color: var(--bs-secondary);
+  font-size: 2em;
+  text-shadow: 0 2px 5px black;
+  padding: 0px;
+}
+
+.scroll-left {
+  left: 10px;
+}
+
+.scroll-right {
+  right: 10px;
+}
+
+.scroll-container .active {
+  cursor: grabbing;
+}
+
+.scroll-container {
+  /*white-space: nowrap;*/
+  cursor: grab;
+  display: flex;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding: 10px;
+  scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-btn:hover {
+  background-color: transparent;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .scroll-left {
+    left: -50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .scroll-right {
+    right: -50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .scroll-btn {
+    display: block;
+  }
+}
+
