@@ -4,8 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Brand</title>
-
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <!-- Link Bootstrap CSS from GitHub -->
@@ -13,8 +11,121 @@
         href="https://cdn.jsdelivr.net/gh/EndireKT/Distribution-Website/assets/bootstrap/css/bootstrap.min.css">
 
     <!-- Link Custom CSS from GitHub -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/EndireKT/Distribution-Website/assets/css/custom.css">
+    <link rel="stylesheet"
+        href="https://raw.githubusercontent.com/EndireKT/Distribution-Website/master/assets/css/custom.css">
 </head>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-family: var(--font-body-family) !important;
+        font-style: var(--font-body-style) !important;
+        font-weight: var(--font-body-weight) !important;
+        font-size: 1.5rem;
+        letter-spacing: 0.06rem;
+        line-height: 1.8;
+        max-width: 100%;
+        /* Ensures full width */
+    }
+
+    .container {
+        max-width: 1400px;
+        /* Increase width (Default in Bootstrap is ~1200px) */
+        width: 80%;
+        /* Adjust width relative to viewport */
+    }
+
+    .custom-justify {
+        text-align: justify;
+    }
+
+    #scroll-container {
+        gap: 1rem;
+        padding: 10px;
+        overflow-x: auto;
+        white-space: nowrap;
+        cursor: grab;
+        scroll-snap-type: x mandatory;
+    }
+
+    .scroll-card {
+        flex: 0 0 auto;
+        width: 13em;
+        scroll-snap-align: center;
+        border-radius: 0.3em;
+        margin-top: 0px;
+    }
+
+    .scroll-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: transparent !important;
+        border: none !important;
+        width: 80px;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        color: var(--bs-secondary);
+        font-size: 2em;
+        text-shadow: 0 2px 5px black !important;
+        padding: 0px;
+        outline: none !important;
+    }
+
+    .scroll-left {
+        left: 10px;
+    }
+
+    .scroll-right {
+        right: 10px;
+    }
+
+    .scroll-container .active {
+        cursor: grabbing;
+    }
+
+    .scroll-container {
+        /*white-space: nowrap;*/
+        cursor: grab;
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 1rem;
+        padding: 10px;
+        scrollbar-width: none;
+    }
+
+    .scroll-container::-webkit-scrollbar {}
+
+    .scroll-btn:hover {
+        background-color: transparent;
+        color: white;
+    }
+
+    .scroll-btn {
+        display: none;
+    }
+
+    @media (min-width: 1200px) {
+        .scroll-left {
+            left: -50px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .scroll-right {
+            right: -50px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .scroll-btn {
+            display: block;
+        }
+    }
+</style>
 
 <body>
     <header class="pt-5">
@@ -49,7 +160,7 @@
                                     width="40em" height="40em">
                             </div>
                             <div>
-                                <h5 class="fw-bold">Virtual Reality</h5>
+                                <h3 class="fw-bold">Virtual Reality</h3>
                                 <p class="text-body-emphasis">VR Headset, accessories, treadmill, custom VR
                                     applications, and more.&nbsp;</p>
                             </div>
@@ -65,7 +176,7 @@
                                     width="40em" height="40em">
                             </div>
                             <div>
-                                <h5 class="fw-bold">Gaming Peripherals</h5>
+                                <h3 class="fw-bold">Gaming Peripherals</h3>
                                 <p class="text-dark-emphasis">Gaming consoles, controllers,&nbsp;accessories, figurine,
                                     trading cards, boardgames, and more.&nbsp;</p>
                             </div>
@@ -81,7 +192,7 @@
                                     width="40em" height="40em">
                             </div>
                             <div>
-                                <h5 class="fw-bold">Racing Simulator</h5>
+                                <h3 class="fw-bold">Racing Simulator</h3>
                                 <p class="text-dark-emphasis">Racing wheels, rigs, accessories, system, and more.&nbsp;
                                 </p>
                             </div>
@@ -97,7 +208,7 @@
                                     width="40em" height="40em">
                             </div>
                             <div>
-                                <h5 class="fw-bold">Smart IT Hardware</h5>
+                                <h3 class="fw-bold">Smart IT Hardware</h3>
                                 <p class="text-dark-emphasis">Smart Glass, Smart Keyboard, Smart Mouse, Monitor and
                                     other computer peripherals.</p>
                             </div>
@@ -113,7 +224,7 @@
                                     width="40em" height="40em">
                             </div>
                             <div>
-                                <h5 class="fw-bold">Toys &amp; Boardgames</h5>
+                                <h3 class="fw-bold">Toys &amp; Boardgames</h3>
                                 <p class="text-dark-emphasis">Electronic, electronic, educational toys and more. Board
                                     Games, puzzles, trading Card and more. </p>
                             </div>
@@ -129,7 +240,7 @@
                                     width="40em" height="40em">
                             </div>
                             <div>
-                                <h5 class="fw-bold">Household Electronic</h5>
+                                <h3 class="fw-bold">Household Electronic</h3>
                                 <p class="text-dark-emphasis">Smart home devices, small applicants, e-commerce
                                     electronic and more.&nbsp;</p>
                             </div>
@@ -169,7 +280,7 @@
                                             d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
                                         </path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-1">E-Commerce Ready</h5>
+                                    <h4 class="fw-bold mb-0 ms-1">E-Commerce Ready</h4>
                                 </div>
                                 <p class="text-muted my-3 custom-justify">We handle warehousing, distribution, and
                                     delivery to ensure seamless operations.</p>
@@ -186,7 +297,7 @@
                                             d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
                                         </path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-1">Competitive Pricing</h5>
+                                    <h4 class="fw-bold mb-0 ms-1">Competitive Pricing</h4>
                                 </div>
                                 <p class="text-muted my-3 custom-justify">We offer bulk pricing and special deals to
                                     help maximize your margins.</p>
@@ -203,7 +314,7 @@
                                             d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
                                         </path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-1">Expert Support</h5>
+                                    <h4 class="fw-bold mb-0 ms-1">Expert Support</h4>
                                 </div>
                                 <p class="text-muted my-3 custom-justify">Our team is ready to assist with product
                                     recommendations, sourcing, repair &amp; warranty, customization and after-sales
@@ -221,7 +332,7 @@
                                             d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
                                         </path>
                                     </svg>
-                                    <h5 class="fw-bold mb-0 ms-1">Wide Product Range</h5>
+                                    <h4 class="fw-bold mb-0 ms-1">Wide Product Range</h4>
                                 </div>
                                 <p class="text-muted my-3 custom-justify">From gaming and VR to electronics, we provide
                                     carefully curated products that meet market demand.</p>

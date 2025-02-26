@@ -21,10 +21,6 @@ body {
   scroll-snap-type: x mandatory;
 }
 
-#scroll-container::-webkit-scrollbar {
-  display: none;
-}
-
 .scroll-card {
   flex: 0 0 auto;
   width: 13em;
@@ -48,6 +44,7 @@ body {
   text-shadow: 0 2px 5px black !important;
   padding: 0px;
   outline: none !important;
+  display: none;
 }
 
 .scroll-left {
@@ -103,5 +100,32 @@ body {
   .scroll-btn {
     display: block;
   }
+}
+
+.mobile-tablet-view {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .mobile-tablet-view {
+    display: none;
+  }
+}
+
+.desktop-view {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .desktop-view {
+    display: block;
+  }
+}
+
+.scroll-card-desktop {
+  /*flex: 0 0 auto;*/
+  /*scroll-snap-align: center;*/
+  /*border-radius: 0.3em;*/
+  /*margin-top: 0px;*/
 }
 
